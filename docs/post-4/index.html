@@ -154,6 +154,24 @@
 <p>Unas imagenes con contexto de la banca Victoria.</p>
 <p><img src="/img/opciones.png" alt="Imagen Simple"></p>
 <p>Variaciones y render de la banca Victoria a la Retaguardia.</p>
+<hr>
+<h2 id="pdf-final">PDF Final</h2>
+
+<iframe id='pdf-hugo' src='/pdf/entrega.pdf'
+frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:100%; height:60vh;"></iframe>
+
+<button onclick="myFunction('pdf-hugo')" class="button button-primary mb-2" style="width: 100%;">Ver Pantalla Completa</button>
+
+<script>
+    function myFunction(id) {
+      document.getElementById(id).classList.add("full-screen");
+    }
+    document.addEventListener('keydown', function(event){
+	if(event.key === "Escape"){
+        document.getElementById('pdf-hugo').classList.remove("full-screen");
+	}
+});
+</script>
 
 </div>
 </div>
