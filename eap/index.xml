@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Ingeniería en Diseño on Francisco Muñoz - Diseño</title>
+    <link>https://fmunoz25.github.io/eap/</link>
+    <description>Recent content in Blog Ingeniería en Diseño on Francisco Muñoz - Diseño</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="https://fmunoz25.github.io/eap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EAP Tarea 1</title>
+      <link>https://fmunoz25.github.io/eap/post-1/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://fmunoz25.github.io/eap/post-1/</guid>
+      <description>Ejercicio Luces Leds</description>
+    </item>
+    
+    <item>
+      <title>EAP Tarea 2</title>
+      <link>https://fmunoz25.github.io/eap/post-2/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://fmunoz25.github.io/eap/post-2/</guid>
+      <description>The real Breadboard</description>
+    </item>
+    
+    <item>
+      <title>EAP Ejercicio en clases</title>
+      <link>https://fmunoz25.github.io/eap/post-3/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://fmunoz25.github.io/eap/post-3/</guid>
+      <description>EAP</description>
+    </item>
+    
+    <item>
+      <title>EAP Tarea 7-8 &#43; ejercicios PPT</title>
+      <link>https://fmunoz25.github.io/eap/post-4/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://fmunoz25.github.io/eap/post-4/</guid>
+      <description>Electrónica Aplicada Al Diseño</description>
+    </item>
+    
+  </channel>
+</rss>
