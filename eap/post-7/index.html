@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MIDTERM - Francisco Muñoz - Diseño</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://fmunoz25.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.af4d775923fecb34e1dba93a0a1f15a1be52117a7fd9ba132b6c401816d3a6f7.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-electrónica aplicada">
+      <a href="/eap/">
+        <span>Electrónica Aplicada</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://fmunoz25.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://fmunoz25.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-electrónica aplicada">
+      <a href="/eap/">
+        <span>Electrónica Aplicada</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+
+    
+    
+<h1 class="title">MIDTERM</h1>
+<div class="content ">
+  <h1 id="introducción">Introducción</h1>
+<p>A modo explicativo quería partir describiendo el encargo. Primero que todo, la idea era hackear un juguete/objeto el cual tuviera componentes electrónicos en su interior y utilizar dichos componentes, con la posibilidad de utilizar externos, para crear un objeto con una función distinta a la del original o algo totalmente distinto pero ocupando los componentes del juguete. Al final es replantearse la funcionalidad para lo cual fueron utilizados esos componentes, para ver si efectívamente habíamos aprendido de dichos componentes, para que funcionan y como utilizarlos en distintas ocasiones.</p>
+<p>En mi caso, en primera instancia tenia un teclado de juguete el cual contaba con botones y un buzzer. No se me ocurría nada que pudiera hacer con estos componentes ya que lo encontraba muy aburrido. Por lo tanto, unos días después decidi desarmar unos notebooks que tengo tirados en mi casa sin uso y sin arreglo y trabajar con esto.
+El esquemático obviamente era mucho mas complejo de lo que yo creía, pero logré sacar varias piezas y logré encontrar un proyecto el cual lo encuentro bastante interesante, tanto por el proceso para lograrlo, como el fin de este, el cual es reutilizar y darles un nuevo uso a partes de computadores los cuales en su mayoria son desechados en la basura.
+Así nace mi proyecto el cual tiene de nombre False Window.</p>
+<h1 id="false-window">False Window</h1>
+<p>Este consiste en la reutilización de pantallas quebradas de notebooks antiguos, nuevos, etc que serán desechados o estan tirados en la casa juntando polvo y darles un nuevo uso.
+Consiste en quitar la pantalla de la base del computador y quitarle el vidrio que hace que se vean los pixeles de la pantalla (por eso es que lo ideal serían pantallas con el vidrio delantero roto, los que no tengan el vidrio roto se les puede dar otro uso que podría ser un fúturo proyecto que estoy armando) para utilizar simplemente las leds y las pantallas difuminadoras de luz que tienen todas las pantallas led de los computadores.</p>
+<p>Mediante un circuito bastante sencillo, podemos lograr que estas leds se prendan indefinidamente con un transformador AC/DC de 12V y lograr una lámpara, que para ser franco, alumbra mas de lo que esperaba. Esta lámpara da la sensacion de tridimensionalidad o de &ldquo;vacio&rdquo; en ella, por las láminas difuminadoras que la pantalla tiene originalmente, mostrando un mayor atractivo para el ojo.</p>
+<p>Pero eso no es todo, en orden de no solamente tener una lámpara la cual se aprieta un interruptor y la prendemos, quise ponerle algo adicional. Para esto, quise hacer el encendido algo más &ldquo;entretenido&rdquo;. Es por esto que, al circuito simple el cual necesita esta pantalla para encenderse, le agrege un micrófono, arduino y un relé para que no se tenga que enchufar o desenchufar a cada rato la pantalla (o evitar un switch como las lámparas tradicionales) y que se deba aplaudir, chasquear los dedos, etc para lograr encenderla.</p>
+<p>Debo decir que fue un desafío lograr esto, ya que nunca habia trabajado con un relé y no entendia mucho lo que hacía, pero con la ayuda de la profe, la ayudante y nuestro querido internet logré entender para que y cómo funciona.</p>
+<h2 id="esquemático-original-y-tinkercad-original">Esquemático Original y Tinkercad Original</h2>
+<p>Para esta parte del encargo logre encontrar la datasheet de la pantalla completa del notebook y si bien, es bastante complicado logre identificar al menos en el esquema de funcionamiento de la datasheet en que área estaba trabajando yo en orden de lograr lo que quería. Además, hice una representacion en tinkercad lo mas simple que se podía, pues era imposible tratar de recrear el esquemático original en este programa.</p>
+<p>De igual manera lo represento como forma abstracta de lo que &ldquo;sucede&rdquo; en la pantalla.</p>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fmunoz25.github.io//img/midterm1//1.png');" >
+				      <img itemprop="thumbnail" src="https://fmunoz25.github.io//img/midterm1//1.png" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://fmunoz25.github.io//img/midterm1//1.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fmunoz25.github.io//img/midterm1//2.png');" >
+				      <img itemprop="thumbnail" src="https://fmunoz25.github.io//img/midterm1//2.png" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://fmunoz25.github.io//img/midterm1//2.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fmunoz25.github.io//img/midterm1//3.png');" >
+				      <img itemprop="thumbnail" src="https://fmunoz25.github.io//img/midterm1//3.png" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://fmunoz25.github.io//img/midterm1//3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+<p>Como vemos en la primera foto es un esquemático en bloques del funcionamiento, en donde nosotros nos centramos en la parte inferior del diagrama el cual plantea el como funcionan las leds que tienen las pantallas. La parte superior del esquema no es importante para nuestro proyecto.</p>
+<p>Luego, tenemos una tabla en donde vemos los distintos terminales en el circuito los cuales son relevantes para nosotros, en el cual vemos de donde sacaran corriente las LEDS, cuantos volts minimos necesitan y cuantos máximos soportan. Pero lo mas importante, es cuantos volts necesitan para funcionar, que son 12V aprox.</p>
+<h2 id="referentes">Referentes</h2>
+<h4 id="the-hacksmith">The Hacksmith</h4>
+<p>We take fictional ideas from comics, movies &amp; video games and make real working prototypes as a way to inspire youth into science, technology and engineering!&quot;</p>
+<p><a href="https://www.hacksmith.tech/">https://www.hacksmith.tech/</a></p>
+<p>Link youtube: <a href="https://www.youtube.com/channel/UCjgpFI5dU-D1-kh9H1muoxQ">https://www.youtube.com/channel/UCjgpFI5dU-D1-kh9H1muoxQ</a></p>
+<p>Es un ingeniero el cual comenzó en su taller construyendo cosas geek de películas tales como Iron Man, Spider Man, etc y ahora tiene un equipo el cual lo sigue para poder en un futuro lograr construir un exoesqueleto parecido al de iron man.</p>
+<p>Él mismo en su pagina web dice como el partió y como podriamos todos partir para llegar a algo como lo que hace él, y lo que recomienda es literal, desarmar cosas que esten en la casa, rearmarlas, arreglarlas o hacer cosas nuevas con sus partes&hellip; Total si no funciona, ya estaba roto !</p>
+<h4 id="diy-perks">DIY Perks</h4>
+<p>Link Youtube: <a href="https://www.youtube.com/channel/UCUQo7nzH1sXVpzL92VesANw">https://www.youtube.com/channel/UCUQo7nzH1sXVpzL92VesANw</a></p>
+<p>Es un canal de youtube el cual enseña a hacer proyectos DIY reutilizando partes o desechos electrónicos. Te muestran todo el proceso, los componentes que debes utilizar y que hacer para que funcione todo lo que quieras hacer. Parlantes, micrófonos, lámparas, tiras led, todo utilizando partes reutilizadas o a bajo costo para lograr proyectos realmente increibles.</p>
+<h1 id="prototipo">Prototipo</h1>
+<h2 id="esquemático-final-y-tinkercad-final">Esquemático final y Tinkercad Final</h2>
+<p>Para el esquemático final ocupe una página (lucid.app) para realizarlo.
+Tambien mostraré un tinkercad estimativo de como es efectivamente mi circuito (dejaré de lado la conexión de las leds ya que no se acerca a la realidad, pero en el esquemático se entiende el circuito completo).</p>
+<p>Aca vemos primero que todo las conexiones que hay que tener en la placa del LCD en donde el GND de la placa va directo al cable negativo de nuestro transformador de 12V. Luego, conectamos un cable para PWM_IN  y uno para LED_EN, los cuales conectaremos ambos a la union entre las 2 resistencias de 180 Ohms para que le lleguen 6V. Esto es asi porque el PWM_IN esta hecho para recibir impulsos rápidos del notebook cuando esta encendido dependiendo de la intensidad de brillo que uno decida tener en el computador, por lo tanto si le damos un voltaje consistente, tendremos los leds en el brillo máximo todo el tiempo. Por otro lado, LED_EN funciona como un switch de on-off en donde cuando tiene un voltaje logra encender las leds de la pantalla LCD. Por último, el pin VLED es quien le entrega la corriente a los leds y es por eso que lo soldamos directamente hacia el cable positivo de nuestro transformador.</p>
+<p>Luego, en orden de agregarle el micrófono, necesitamos un relé para poder hacer el cruce entre los 5V del arduino y los 12V del transformador.
+Por lo tanto, el pin colector de nuestro relé lo conecte al pin digital 8 quien luego de la programación del código, haremos que al momento en que el micrófono sienta un aplaudo/chasquido, le llegue corriente y asi pueda accionar el relé y hacer que la corriente de nuestro transformador pase a nuestra pantalla LCD y se encienda.</p>
+<p>A continuación dejare imagenes de los esquematicos, un esquemático de funcionamiento del relé, el codigo de arduino que utilicé y un esquemático de tinkercad simplificado hasta el relé.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fmunoz25.github.io//img/midterm2//1.png');" >
+				      <img itemprop="thumbnail" src="https://fmunoz25.github.io//img/midterm2//1.png" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://fmunoz25.github.io//img/midterm2//1.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fmunoz25.github.io//img/midterm2//2.png');" >
+				      <img itemprop="thumbnail" src="https://fmunoz25.github.io//img/midterm2//2.png" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://fmunoz25.github.io//img/midterm2//2.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fmunoz25.github.io//img/midterm2//3.png');" >
+				      <img itemprop="thumbnail" src="https://fmunoz25.github.io//img/midterm2//3.png" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://fmunoz25.github.io//img/midterm2//3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fmunoz25.github.io//img/midterm2//4.png');" >
+				      <img itemprop="thumbnail" src="https://fmunoz25.github.io//img/midterm2//4.png" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://fmunoz25.github.io//img/midterm2//4.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+
+</div>
+</div>
+
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
